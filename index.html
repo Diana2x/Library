@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Book Library</title>
+  <script src="https://kit.fontawesome.com/1d77212d15.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="js/script.js" defer></script>
+  <link href="style.css" rel="stylesheet">
+</head>
+<header> 
+    <h1> Book Library</h1>
+    <img class="book-png" src="images/Book.png" alt="books">
+</header>
+<body>
+  <div class="form">
+  <form class="book-form"> 
+    <label for="title">Book Title</label><br>
+    <input id="title" name="title"  type="text"><br>
+    <label for="author">Who is the author?</label><br>
+    <input id="author" name="author"  type="text"><br>
+    <label for="pages">Number of Pages</label><br>
+    <input type="number" id="pages" name="pages" min="1" max="10000000"><br>
+    <label for="read">I have already read this book!</label>
+    <input type="checkbox" id="read" name="read"> <br>
+    <button id="submit"class="btn-grad">Add to collection</button><br>
+   </form> 
+  </div>
+  <div class="book-grid"><p>Text</p></div>
+
+</body>
+<footer> 
+  <p>Copyright © 2021 Diana Coe </p><a href="https://github.com/Diana2x" target="_blank"><i class="fab fa-github-alt"></i></a>
+
+</html>

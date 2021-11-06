@@ -1,0 +1,135 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  background-color: #958799;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+body {
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  position: block;
+  top: 0;
+  width: 400px;
+  height: 15%;
+  background-color: #958799;
+  border-bottom: 2px #ffdee9 solid;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+header > h1 {
+  font-size: 40px;
+  color: #ffdee9;
+  letter-spacing: 3px;
+}
+
+.book-png {
+  cursor: pointer;
+  width: 100px;
+  height: 70px;
+  background-color: transparent;
+  padding-right: 30px;
+}
+
+footer {
+  position: absolute;
+  justify-content: left;
+  display: flex;
+  bottom: 0;
+  width: 100vw;
+  height: 40px;
+  font-size: 20px;
+  color: #000000;
+}
+
+.fa-github-alt {
+  margin-top: 3px;
+  font-size: x-large;
+  padding-left: 10px;
+  color: #000000;
+}
+
+.fa-github-alt:hover {
+  cursor: pointer;
+  color: #ff3cac;
+}
+
+.form {
+  min-width: 300px;
+  width: 400px;
+}
+.book-form {
+  text-align: left;
+  font-size: 1em;
+  padding: 10px;
+  border: 2px black solid;
+  line-height: 2.6;
+  font-weight: bold;
+}
+input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px #ffdee9 solid;
+  outline: none;
+  width: 300px;
+  font-size: 1em;
+  font-family: inherit;
+  font-weight: bold;
+}
+
+#read {
+  margin-left: 40px;
+  height: 20px;
+  width: 20px;
+  margin-top: 10px;
+}
+#submit {
+  margin-top: 50px;
+  margin-left: 80px;
+  font-size: 12px !important;
+  font: inherit;
+}
+
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #fbb5f2 0%,
+    #fdb7da 51%,
+    #f78cff 100%
+  );
+}
+.btn-grad {
+  margin: 10px;
+  padding: 10px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: black;
+  border-radius: 10px;
+  display: block;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.book-grid {
+  border: 3px red solid;
+  margin-left: 400px;
+  margin-top: -500px;
+  height: 100vh;
+}
