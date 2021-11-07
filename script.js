@@ -1,17 +1,17 @@
 let myLibrary = []; 
 
-function Book(title, author, pages, read){
+class Book{
+    constructor(title, author, pages,  status){
     this.title = title
     this.author = author 
     this.pages = pages
-    this.read = read 
-    this.info = function(){
-        return `${title} by ${author}, ${pages} pages, Read: ${read}`;
+    this.status = status
     }
 }
 
-
-const theHobbit = new Book("The Hobbit", "J.R.R Tolkien", "295", "No"); 
-
-console.log(theHobbit.info());
-
+function addNewBook(title, author, pages, status){
+        myLibrary.push(new Book(title, author, pages, status));
+}
+console.log(myLibrary);
+addNewBook("Harry Potter", "j.k roling", 27, false);
+console.log(myLibrary);
