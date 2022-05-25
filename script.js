@@ -23,7 +23,7 @@ class UI {
        <td>${book.author}</td> 
        <td>${book.pages}</td> 
        <td>${book.status}</td>
-       <td><a href="#" class="delete">X</a></td>
+       <td><a href="#"><i value="delete" type="button" class="delete fa fa-trash"></i></a></td>
        `; 
 
        list.appendChild(row); 
@@ -31,7 +31,7 @@ class UI {
 
    static deleteBook(el){
        if(el.classList.contains("delete")){
-           el.parentElement.parentElement.remove();
+           el.parentElement.parentElement.parentElement.remove();
        }
    }
 
@@ -120,7 +120,5 @@ document.querySelector("#book-list").addEventListener("click", (e) => {
     //remove book from UI
     UI.deleteBook(e.target);
     //remove book from store
-    Store.removeBook(e.target.parentElement.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.textContent); 
-})
-
-
+    Store.removeBook(e.target.parentElement.parentElement.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.textContent); 
+});
