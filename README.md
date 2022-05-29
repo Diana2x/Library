@@ -1,6 +1,6 @@
 # Book Library
 
-Domain hosting website.
+A website that allows the user to store their favorite books information & read status.
 
 Live version: [☁️ Here ☁️](https://diana2x.github.io/Library/)
 
